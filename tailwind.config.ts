@@ -12,6 +12,10 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        valentin: ['valentin', 'sans-serif'],
+        angelia: ['angelia', 'sans-serif'],
+      },
     },
   },
   plugins: [],
