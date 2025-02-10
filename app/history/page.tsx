@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { ver}
 
 export default function Home() {
     return (
@@ -16,7 +17,6 @@ export default function Home() {
             </div>
         </div>
         <br />
-        hola
       </>
     );
   }

@@ -9,10 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "antd": "^5.23.4",
     "next": "15.1.6",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "react-vertical-timeline-component": "^3.5.3"
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
     "@types/node": "^20",
