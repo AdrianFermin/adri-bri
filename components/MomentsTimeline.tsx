@@ -2,12 +2,15 @@
 import { Col, Row, Image as AntImg, Timeline } from "antd";
 import { redirect } from "next/navigation";
 import { Logo } from "./Logo";
-import { SiTinder } from "react-icons/si";
+import { SiTinder, SiAnimalplanet  } from "react-icons/si";
 import { IoHeartHalf } from "react-icons/io5";
 import { GiLovers } from "react-icons/gi";
-import { FaBus } from "react-icons/fa";
+import { FaBus, FaBirthdayCake, FaTree, FaAirbnb   } from "react-icons/fa";
+import { FaBowlFood } from "react-icons/fa6";
 import { MdOutlinePool } from "react-icons/md";
-import { PiStudentBold } from "react-icons/pi";
+import { PiStudentBold  } from "react-icons/pi";
+import { BsCalendarDate, BsCalendarHeart  } from "react-icons/bs";
+import { TbBeach } from "react-icons/tb";
 
 export const MomentsTimeline = () => {
 
@@ -155,9 +158,19 @@ export const MomentsTimeline = () => {
         {
             children: 
             <>
+                <div id="2023" className="font-angelia">
+                    <h3 className="font-semibold text-4xl md:text-3xl me-2">2023</h3>
+                </div>
+            </>,
+            dot: <BsCalendarDate className="text-3xl md:text-3xl"/>,
+            color: 'blue'
+        },
+        {
+            children: 
+            <>
                 <div className="font-angelia">
                     <h3 className="font-semibold text-xl md:text-3xl me-1">Primer dia de Clases</h3>
-                    <p className="text-gray-500 mb-2 md:text-lg"></p>
+                    <p className="text-gray-500 mb-2 md:text-lg">14 de Enero 2023</p>
                     <div>
                         <p className="text-lg">
                             El 14 de Enero es una fecha que esta marcada en nuestro calendario mental, fue el
@@ -188,7 +201,277 @@ export const MomentsTimeline = () => {
             children: 
             <>
                 <div className="font-angelia">
-                    <h3 className="font-semibold text-xl md:text-3xl me-1">Primer dia de Clases</h3>
+                    <h3 className="font-semibold text-xl md:text-3xl me-1">Dia del Zoologico</h3>
+                    <p className="text-gray-500 mb-2 md:text-lg">26 de Febrero 2023</p>
+                    <div>
+                        <p className="text-lg">
+                            Ese dia tuvimos una de las mejores citas de nuestra relacion, nos pasamos el dia en el
+                            zoologico, dimos muchas vueltas y salimos con las piernas hechas mierda, pero se disfruto
+                            y mucho.
+                        </p>
+                        <Row className="my-4" justify={"end"}>
+                            <Col>
+                                <AntImg width={200} src={"/images/timeline/imagen10.jpg"} />
+                            </Col>
+                        </Row>
+                        <p className="text-lg">
+                            Luego fuimos a un restaurante asiatico y comiste dumplings verdes que te gustaron mucho,
+                            a ti no te gusto la foto pero a mi me encanta esa cara de felicidad que tenias cuando
+                            estabas comiendo.
+                        </p>
+                        <Row className="my-4" justify={"end"}>
+                            <Col>
+                                <AntImg width={200} src={"/images/timeline/imagen11.jpg"} />
+                            </Col>
+                        </Row>
+                    </div>
+                </div>
+            </>,
+            dot: <SiAnimalplanet className="text-xl md:text-3xl"/>,
+            color:'green',
+        },
+        {
+            children: 
+            <>
+                <div className="font-angelia">
+                    <h3 className="font-semibold text-lg md:text-3xl me-1">Nuestra Historia: Primer Aniversario</h3>
+                    <p className="text-gray-500 mb-2 md:text-lg">17 de Septiembre 2023</p>
+                    <div>
+                        <p className="text-lg">
+                            El primer aniversario juntos, lo que empezo con un like por error ser termino convirtiendo
+                            en tu mejor error y lo mejor que me pudo haber pasado aunque fuese sin querer, ese dia fuimos
+                            al mirador e hicimos un picnic muy bueno la verdad.
+                        </p>
+                        <Row className="my-4" justify={"end"}>
+                            <Col>
+                                <AntImg width={100} src={"/images/timeline/imagen12.jpg"} />
+                            </Col>
+                        </Row>
+                    </div>
+                </div>
+            </>,
+            dot: <BsCalendarHeart  className="text-xl md:text-3xl"/>,
+            color:'red',
+        },
+        {
+            children: 
+            <>
+                <div className="font-angelia">
+                    <h3 className="font-semibold text-xl md:text-3xl me-1">Primer Cumple Juntos</h3>
+                    <p className="text-gray-500 mb-2 md:text-lg">26 de Octubre 2023</p>
+                    <div>
+                        <p className="text-lg">
+                            Fue el primer cumple de uno de los dos que pudimos pasar juntos y me hicieron toda una
+                            sorpresa con bizcocho, fue mi familia y todo eso, cumple de 22 de fortnite y yo el mas
+                            feliz contigo al lado.
+                        </p>
+                        <Row className="my-4" justify={"end"}>
+                            <Col>
+                                <AntImg width={150} src={"/images/timeline/imagen13.jpg"} />
+                            </Col>
+                        </Row>
+                        <p className="text-lg">
+                            Luego me viste jugar y nos pasamos el dia viendo memes y hablando disparates,
+                            no se que te estaba mostrando pero se parecia divertido por tu cara.
+                        </p>
+                        <Row className="my-4" justify={"end"}>
+                            <Col>
+                                <AntImg width={150} src={"/images/timeline/imagen14.jpg"} />
+                            </Col>
+                        </Row>
+                    </div>
+                </div>
+            </>,
+            dot: <FaBirthdayCake  className="text-xl md:text-3xl"/>,
+            color:'blue',
+        },
+        {
+            children: 
+            <>
+                <div className="font-angelia">
+                    <h3 className="font-semibold text-xl md:text-3xl me-1">Salida Elegante</h3>
+                    <p className="text-gray-500 mb-2 md:text-lg">10 de Diciembre 2023</p>
+                    <div>
+                        <p className="text-lg">
+                            Para ese dia se me ocurrio hacer una salida un poco diferente y vestirnos lindos y
+                            elegantes e ir a un restaurante "lujoso" y comer elegantes y fisnos.
+                        </p>
+                        <Row className="my-4" justify={"end"}>
+                            <Col>
+                                <AntImg width={200} src={"/images/timeline/imagen15.jpg"} />
+                            </Col>
+                        </Row>
+                        <p className="text-lg">
+                            Tambien recuerdo que cuando llegaste te grabe un video y te hice un "meme" porque
+                            estabas hermosa.
+                        </p>
+                        <Row className="my-4" justify={"end"}>
+                            <Col>
+                                <video width={150} src="/images/timeline/video1.mp4" controls>
+                                </video>
+                            </Col>
+                        </Row>
+                    </div>
+                </div>
+            </>,
+            dot: <FaBowlFood className="text-xl md:text-3xl"/>,
+            color:'red',
+        },
+        {
+            children: 
+            <>
+                <div id="2024" className="font-angelia">
+                    <h3 className="font-semibold text-4xl md:text-3xl me-2">2024</h3>
+                </div>
+            </>,
+            dot: <BsCalendarDate className="text-3xl md:text-3xl"/>,
+            color: 'blue'
+        },
+        {
+            children: 
+            <>
+                <div className="font-angelia">
+                    <h3 className="font-semibold text-xl md:text-3xl me-1">Visita al Jardin Botanico</h3>
+                    <p className="text-gray-500 mb-2 md:text-lg">13 de Enero 2024</p>
+                    <div>
+                        <p className="text-lg">
+                            Ese no fue ningun dia especial pero decidimos salir, fue nuestra primera salida del ano
+                            pasado y aunque caminamos un buen valio la pena, vimos muchas cosas bonitas y la pasamos super.
+                        </p>
+                        <Row className="my-4" justify={"end"}>
+                            <Col>
+                                <AntImg width={150} src={"/images/timeline/imagen17.jpg"} />
+                            </Col>
+                        </Row>
+                        <p className="text-lg">
+                            Tambien te tome esta foto linda en el puente que crujia potente, pero se confio y no se cayo
+                            por suerte.
+                        </p>
+                        <Row className="my-4" justify={"end"}>
+                            <Col>
+                                <AntImg width={200} src={"/images/timeline/imagen18.jpg"} />
+                            </Col>
+                        </Row>
+                    </div>
+                </div>
+            </>,
+            dot: <FaTree className="text-xl md:text-3xl"/>,
+            color:'green',
+        },
+        {
+            children: 
+            <>
+                <div className="font-angelia">
+                    <h3 className="font-semibold text-xl md:text-3xl me-1">Viaje al Airbnb</h3>
+                    <p className="text-gray-500 mb-2 md:text-lg">4 de Marzo 2024</p>
+                    <div>
+                        <p className="text-lg">
+                            Habiamos planeado hace mucho una salida asi hace mucho y al fin pudimos hacerla,
+                            yo fui a Bani y nos pasamos todo el dia en un Aribnb, cocinamos, comimos y cosas
+                            no aptas para aqui, pero fue espectacular ese dia.
+                        </p>
+                        <Row className="my-4" justify={"end"}>
+                            <Col>
+                                <AntImg width={200} src={"/images/timeline/imagen19.jpg"} />
+                            </Col>
+                        </Row>
+                        <p className="text-lg">
+                            Ese dia tambien fue cuando te regale tu anillo y aunque no fue por eso
+                            ya no podias decirme que el anillo pa cuando?
+                        </p>
+                        <Row className="my-4" justify={"end"}>
+                            <Col>
+                                <AntImg width={200} src={"/images/timeline/imagen20.jpg"} />
+                            </Col>
+                        </Row>
+                    </div>
+                </div>
+            </>,
+            dot: <FaAirbnb className="text-xl md:text-3xl"/>,
+            color:'red',
+        },
+        {
+            children: 
+            <>
+                <div className="font-angelia">
+                    <h3 className="font-semibold text-xl md:text-3xl me-1">Salida con tu Abuelo</h3>
+                    <p className="text-gray-500 mb-2 md:text-lg">23 de Junio 2024</p>
+                    <div>
+                        <p className="text-lg">
+                            Ese dia conoci a tu abuelo y un poco cagado estaba, pero bueno, aunque al final
+                            fue un poco incomodo el dia fue 10/10 comiendo las yaniquecas gigantes y hablando
+                            toyos.
+                        </p>
+                        <Row className="my-4" justify={"end"}>
+                            <Col>
+                                <AntImg width={200} src={"/images/timeline/imagen21.jpg"} />
+                            </Col>
+                        </Row>
+                    </div>
+                </div>
+            </>,
+            dot: <TbBeach className="text-xl md:text-3xl"/>,
+            color:'blue',
+        },
+        {
+            children: 
+            <>
+                <div className="font-angelia">
+                    <h3 className="font-semibold text-xl md:text-3xl me-1">Mi Graduacion</h3>
+                    <p className="text-gray-500 mb-2 md:text-lg">2 de Agosto 2024</p>
+                    <div>
+                        <p className="text-lg">
+                            Ese dia alquilaste un vestido especialmente para ir, fuiste con mi familia y todo,
+                            al final de esa carrera el estres que tuve tu lo sabes y el alivio que tenia contigo
+                            era lo que me ayudaba a sobrellevarlo mejor.
+                        </p>
+                        <Row className="my-4" justify={"end"}>
+                            <Col>
+                                <AntImg width={200} src={"/images/timeline/imagen22.jpg"} />
+                            </Col>
+                        </Row>
+                        <p className="text-lg">
+                            Luego de la graduacion fuimos a tomarnos la sesion de fotos y al final comimos
+                            mofongo en Adrian Tropical.
+                        </p>
+                        <Row className="my-4" justify={"end"}>
+                            <Col>
+                                <AntImg width={200} src={"/images/timeline/imagen26.jpg"} />
+                            </Col>
+                        </Row>
+                    </div>
+                </div>
+            </>,
+            dot: <PiStudentBold className="text-xl md:text-3xl"/>,
+            color:'gray',
+        },
+        {
+            children: 
+            <>
+                <div className="font-angelia">
+                    <h3 className="font-semibold text-lg md:text-3xl me-1">Nuestra Historia: Segundo Aniversario</h3>
+                    <p className="text-gray-500 mb-2 md:text-lg">17 de Septiembre 2024</p>
+                    <div>
+                        <p className="text-lg">
+                            En nuestro segundo aniversario repetimos ir al mirador sur y vimos a dos palomas peleando
+                            incluso le pusimos musica de linking park de fondo.
+                        </p>
+                        <Row className="my-4" justify={"end"}>
+                            <Col>
+                                <AntImg width={100} src={"/images/timeline/imagen1.jpg"} />
+                            </Col>
+                        </Row>
+                    </div>
+                </div>
+            </>,
+            dot: <BsCalendarHeart className="text-xl md:text-3xl"/>,
+            color:'red',
+        },
+        {
+            children: 
+            <>
+                <div className="font-angelia">
+                    <h3 className="font-semibold text-xl md:text-3xl me-1">Primer Cumple Juntos</h3>
                     <p className="text-gray-500 mb-2 md:text-lg"></p>
                     <div>
                         <p className="text-lg">
@@ -202,7 +485,7 @@ export const MomentsTimeline = () => {
                     </div>
                 </div>
             </>,
-            dot: <PiStudentBold className="text-xl md:text-3xl"/>,
+            dot: <SiAnimalplanet className="text-xl md:text-3xl"/>,
             color:'red',
         },
     ]
