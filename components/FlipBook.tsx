@@ -33,7 +33,7 @@ export const FlipBook = () => {
         <div className="gallery col-start-2">
           {
             images.map((text, index) => (
-              <Image width={100} height={100} alt={text} key={index} src={`/images/timeline/${text}`}></Image>
+              <Image className="md:w-full w-8/12" width={100} height={100} alt={text} key={index} src={`/images/timeline/${text}`}></Image>
             ))
           }
         </div>
