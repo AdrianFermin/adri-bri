@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { TabManager } from "@/components/TabManager";
 import { Logo } from "@/components/Logo";
+import Head from "next/head";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,7 +30,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <link rel="icon" href="images/favicon.ico" />
+        <link rel="icon" href="/images/logo.ico" />
         <Logo></Logo>
         <br />
         <div className="grid grid-cols-12 gap-4">
