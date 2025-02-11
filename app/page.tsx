@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <>
       <div className="font-angelia text-center justify-center text-wrap">
-        <div className="flex justify-center items-center hover:cursor-pointer" >
+        <div className="flex justify-center items-center" >
             <Image className="my-5" src={"/images/Titulo.png"}  alt="Momentos Especiales" width={545} height={307}></Image>
         </div>
         <h2 className="text-3xl md:text-4xl font-semibold text-center">Esto es una pagina hecha por Adrian y dedicada a Anais</h2>
