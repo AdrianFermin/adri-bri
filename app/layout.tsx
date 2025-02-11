@@ -38,7 +38,7 @@ export default function RootLayout({
         <div className="grid grid-cols-12 gap-4">
           <div className="col-span-10 col-start-2">
             <TabManager></TabManager>
-            <div className="container shadow-md shadow-[#FF8FA3] mb-10 bg-white rounded-md">
+            <div id="mainContainer" className="container shadow-md shadow-[#FF8FA3] mb-10 bg-white rounded-md">
               {children}
             </div>
             <FloatButton icon={<FaArrowUp  />} tooltip={<div>Volver Arriba</div>} className="bg-[#8F0700]" href="#top"/>

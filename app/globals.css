@@ -20,6 +20,11 @@ html {
   scroll-behavior: smooth;
 }
 
+#mainContainer {
+  background-image: url("/images/Hearts.png");
+  background-size: contain;
+}
+
 body {
   background-image: url("/images/Background2.jpg");
   background-size: cover;
