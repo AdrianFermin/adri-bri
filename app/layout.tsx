@@ -3,7 +3,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { TabManager } from "@/components/TabManager";
 import { Logo } from "@/components/Logo";
-import Head from "next/head";
+import { FloatButton } from "antd";
+import { FaArrowUp  } from "react-icons/fa";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,7 +32,8 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased select-none`}
       >
         <link rel="icon" href="/images/logo.ico" />
-        <Logo></Logo>
+        <div id="top"></div>
+        <Logo ></Logo>
         <br />
         <div className="grid grid-cols-12 gap-4">
           <div className="col-span-10 col-start-2">
@@ -39,6 +41,7 @@ export default function RootLayout({
             <div className="container shadow-md shadow-[#FF8FA3] mb-10 bg-white rounded-md">
               {children}
             </div>
+            <FloatButton icon={<FaArrowUp  />} tooltip={<div>Volver Arriba</div>} className="bg-[#8F0700]" href="#top"/>
           </div>
         </div>
       </body>

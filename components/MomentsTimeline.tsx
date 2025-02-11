@@ -1,5 +1,5 @@
 'use client'
-import { Col, Row, Image as AntImg, Timeline } from "antd";
+import { Col, Row, Image as AntImg, Timeline, Button } from "antd";
 import { redirect } from "next/navigation";
 import { Logo } from "./Logo";
 import { SiTinder, SiAnimalplanet  } from "react-icons/si";
@@ -10,7 +10,7 @@ import { FaBowlFood } from "react-icons/fa6";
 import { MdOutlinePool } from "react-icons/md";
 import { PiStudentBold  } from "react-icons/pi";
 import { BsCalendarDate, BsCalendarHeart  } from "react-icons/bs";
-import { TbBeach } from "react-icons/tb";
+import { TbBeach, TbChristmasTreeFilled  } from "react-icons/tb";
 
 export const MomentsTimeline = () => {
 
@@ -307,8 +307,7 @@ export const MomentsTimeline = () => {
                         </p>
                         <Row className="my-4" justify={"end"}>
                             <Col>
-                                <video width={150} src="/images/timeline/video1.mp4" controls>
-                                </video>
+                                <video width={150} src="/images/timeline/video1.mp4" controls/>
                             </Col>
                         </Row>
                     </div>
@@ -454,11 +453,21 @@ export const MomentsTimeline = () => {
                     <div>
                         <p className="text-lg">
                             En nuestro segundo aniversario repetimos ir al mirador sur y vimos a dos palomas peleando
-                            incluso le pusimos musica de linking park de fondo.
+                            incluso le pusimos musica de linking park de fondo. Y lo peor es que solo tenemos foto de 
+                            eso de todo el dia.
                         </p>
                         <Row className="my-4" justify={"end"}>
                             <Col>
-                                <AntImg width={100} src={"/images/timeline/imagen1.jpg"} />
+                                <video width={150} src="/images/timeline/video2.mp4" controls/>
+                            </Col>
+                        </Row>
+                        <p className="text-lg">
+                            Luego de eso fuimos a comer a Rafelo y estuvo bien bueno, de ese dia ya no tenemos 
+                            mas fotos pero pongo esta en la que sales hermosa sonriendo al natural.
+                        </p>
+                        <Row className="my-4" justify={"end"}>
+                            <Col>
+                                <AntImg width={200} src={"/images/timeline/imagen23.jpg"} />
                             </Col>
                         </Row>
                     </div>
@@ -471,27 +480,93 @@ export const MomentsTimeline = () => {
             children: 
             <>
                 <div className="font-angelia">
-                    <h3 className="font-semibold text-xl md:text-3xl me-1">Primer Cumple Juntos</h3>
-                    <p className="text-gray-500 mb-2 md:text-lg"></p>
+                    <h3 className="font-semibold text-xl md:text-3xl me-1">Salida Navideña</h3>
+                    <p className="text-gray-500 mb-2 md:text-lg">17 de Noviembre 2024</p>
                     <div>
                         <p className="text-lg">
-                            Quiza no sea 
+                            Ese dia fui a tu casa y me invitaste a pala pizza y al final la habian mudado de sitio
+                            y tuvimos que ir caminando hasta alla bajo el sol y con miedo que nos atraquen.
                         </p>
                         <Row className="my-4" justify={"end"}>
                             <Col>
-                                <AntImg width={100} src={"/images/timeline/imagen1.jpg"} />
+                                <AntImg width={150} src={"/images/timeline/imagen24.jpg"} />
+                            </Col>
+                        </Row>
+                        <p className="text-lg">
+                            Luego fuimos a comer helados y a dar vueltas por las tiendas y al final no encontramos
+                            nada, solamente unas frutas muy poco legales y calderos bien caros.
+                        </p>
+                        <Row className="my-4" justify={"end"}>
+                            <Col>
+                                <AntImg width={150} src={"/images/timeline/imagen25.jpg"} />
                             </Col>
                         </Row>
                     </div>
                 </div>
             </>,
-            dot: <SiAnimalplanet className="text-xl md:text-3xl"/>,
-            color:'red',
+            dot: <TbChristmasTreeFilled  className="text-xl md:text-3xl"/>,
+            color:'green',
+        },
+        {
+            children: 
+            <>
+                <div className="font-angelia">
+                    <h3 className="font-semibold text-xl md:text-3xl me-1">Daypass</h3>
+                    <p className="text-gray-500 mb-2 md:text-lg">14 de Diciembre 2024</p>
+                    <div>
+                        <p className="text-lg">
+                            Esa fue nuestra ultima salida pero ha sido igual de las mejores, nos fuimos a un monte a
+                            un pasadia para los dos, comimos mucho, armamos rompecabezas, nos reimos, vimos videos, de
+                            todo un poco. 
+                        </p>
+                        <Row className="my-4" justify={"end"}>
+                            <Col>
+                                <AntImg width={200} src={"/images/timeline/imagen27.jpg"} />
+                            </Col>
+                        </Row>
+                        <p className="text-lg">
+                            Incluso tenia piscina y nos pusimos a brechar desde arriba mientras comiamos tostitos
+                            y disfrutabamos la piscina aunque el agua estaba peor que Alaska.
+                        </p>
+                        <Row className="my-4" justify={"end"}>
+                            <Col>
+                                <AntImg width={150} src={"/images/timeline/imagen28.jpg"} />
+                            </Col>
+                        </Row>
+                    </div>
+                </div>
+            </>,
+            dot: <MdOutlinePool className="text-xl md:text-3xl"/>,
+            color:'blue',
+        },
+        {
+            children: 
+            <>
+                <div id="2025" className="font-angelia">
+                    <h3 className="font-semibold text-4xl md:text-3xl me-2">2025</h3>
+                    <p className="text-gray-500 mb-2 md:text-lg">Coming soon....</p>
+                </div>
+            </>,
+            dot: <BsCalendarDate className="text-3xl md:text-3xl"/>,
+            color: 'blue'
         },
     ]
 
     return (
         <>
+            <div>
+                <Row className="my-4" justify={"center"}>
+                    <Button className="mx-2 bg-[#8F0700] hover:bg-[#7FCFDD]" type="primary" size="large">
+                        <a href="#2023">2023</a>
+                    </Button>
+                    <Button className="mx-2 bg-[#8F0700] hover:bg-[#7FCFDD]" type="primary" size="large">
+                        <a href="#2024">2024</a>
+                    </Button>
+                    <Button className="mx-2 bg-[#8F0700] hover:bg-[#7FCFDD]" type="primary" size="large">
+                        <a href="#2025">2025</a>
+                    </Button>
+                </Row>
+            </div>
             <div className="grid grid-cols-10">
                 <div className="col-span-8 col-start-2">
                     <Timeline mode="right" items={items}></Timeline>
